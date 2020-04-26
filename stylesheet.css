@@ -1,0 +1,234 @@
+.container{
+    display: grid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+.content2{
+    grid-column: 1 / -1;
+    grid-row: 4 / 11;
+    background-color: white; 
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    display: grid;
+}
+.intro{
+    grid-column: 1 / -1;
+    grid-row: 1 / 4;
+}
+.left{
+    margin: 5px;
+    grid-column: 1 / 4;
+    grid-row: 4 / -1;
+}
+.right{
+    grid-column: 4 / -1;
+    grid-row: 4 / -1;
+}
+.footer2{
+    grid-column: 1 / -1;
+    grid-row: 11 / -1;
+    background-color:#c1def0;
+}
+.header {
+    grid-column: 1 / -1;
+    grid-row: 1 / 4;
+    background-color: #c1def0;
+    padding: 10px;
+    font-family: arial;
+    text-align: center;
+    font-weight: bold;
+}   
+.nav {
+    display: flex;
+    justify-content: center;
+} 
+.navdesign {
+    background-color: white; 
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.navdesign:hover {
+    background-color: lightgray;
+}
+.dropbtn {
+    background-color: white; 
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: gray; 
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+} 
+.dropdown-content a:hover {background-color: lightgrey;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: lightgrey;;}
+
+.title{
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+}
+.number{
+    display: flex;
+    justify-content: flex-end;
+}
+.body{
+    grid-column: 1 / -1;
+    grid-row: 4 / 8;
+    background-color: white;
+    padding: 10px;
+    font-family: arial;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+img {
+    height: 50px;
+}
+.footer{
+    grid-column: 1 / -1;
+    grid-row: 8 / -1;
+    background-color: #c1def0;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+div {
+    font-family: Comfortaa;
+}
+.thing {
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    margin:0;
+}
+.learnMore {
+    background-color: lightgrey; 
+    padding: 10px;
+    margin: 0px;
+    border-radius: 5px;
+
+}
+.learnMore:hover {
+    background-color: grey;
+}
+#margin {
+    margin: 9px;
+}
+p {
+    margin: 5px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    background-color: white;
+}
+input[type=submit] {
+    background-color: lightgrey;
+    color: black;
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: white;
+}
+input {
+    margin: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+h3{
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+.horse{
+    height: 235px;
+    width: 210px;
+}
+
+@media screen and (max-width: 1000px) {
+    .container{
+        display: grid;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+    }
+    .header {
+        grid-column: 1 / -1;
+        grid-row: 1 / 4;
+        background-color: #c1def0;
+        padding: 10px;
+        font-family: arial;
+        text-align: center;
+        font-weight: bold;
+    }   
+    .intro{
+        grid-column: 1 / -1;
+        grid-row: 1 / 2; 
+    }
+    .left{
+        grid-column: 1 / -1;
+        grid-row: 3 / 9;
+    }
+    .right{
+        grid-column: 1 / -1;
+        grid-row: 9 / -1;
+    }
+
+    .horse{
+        height: 150px;
+        width: 125px;
+        margin: 23px;
+    }
+    .footer2{
+        grid-column: 1 / -1;
+        grid-row: 12 / -1;
+        background-color:#c1def0;
+    }
+
+
+
+
+
+
+
+
+
+}
